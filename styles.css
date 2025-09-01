@@ -185,17 +185,24 @@ footer {
 .social-links a {
   margin: 0 10px;
   display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #cc0000; /* red background */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.3s ease;
 }
 
 .social-links img {
-  width: 28px;
-  height: 28px;
-  filter: grayscale(100%) brightness(1.2);
+  width: 22px;
+  height: 22px;
+  filter: brightness(1.2);
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-.social-links img:hover {
-  filter: none;
+.social-links a:hover {
   transform: scale(1.1);
+  background-color: #ff1a1a; /* brighter red on hover */
 }
